@@ -10,6 +10,9 @@ class WikiPostsController < ApplicationController
   def show
   end
 
+  def example
+  end
+
   # GET /wiki_posts/new
   def new
     @wiki_post = WikiPost.new
