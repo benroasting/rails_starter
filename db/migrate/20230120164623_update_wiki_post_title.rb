@@ -1,5 +1,8 @@
 class UpdateWikiPostTitle < ActiveRecord::Migration[6.1]
-  def change
+  def up
     change_column :wiki_posts, :title, :string, :limit => 50
+  end
+  def down 
+    change_column :wiki_posts, :title, :string, :limit => 250
   end
 end
