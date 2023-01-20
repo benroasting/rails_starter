@@ -3,7 +3,10 @@
 <h1>
     <%= @wiki_post.title %>
 </h1>
-    <%= @wiki_post.image %>
+   
+
+<%= image_tag(@wiki_post.image) %>
+
 <p>
     <%= @wiki_post.description %>
 </p>
