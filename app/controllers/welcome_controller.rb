@@ -1,8 +1,7 @@
 class WelcomeController < ApplicationController
   def index
-    @posts = WikiPost.all
+    @wiki_posts = WikiPost.all
   end
   def about
-  
   end
 end

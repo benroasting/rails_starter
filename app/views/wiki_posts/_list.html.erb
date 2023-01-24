@@ -1,15 +1,15 @@
-<h1>Wiki</h1>
-
 <div class="posts">
   <% @wiki_posts.each do |post| %>
     <p>
       <h4><%= post.title %></h4>
       <%= link_to "View", wiki_post_path(post), class: "wikiLink" %>
-      <%= image_tag post.image , class: 'thumbnail' %>
+      <%
+=begin%>
+ <%= image_tag post.image , class: 'thumbnail' %> 
+<%
+=end%>
     </p>
   <% end %>
 </div>
 
 
-<%= link_to "About", welcome_about_path %>
-<%= link_to "New Post", new_wiki_post_path %>
